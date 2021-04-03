@@ -141,7 +141,7 @@ void oled_Disp(){
   float feet;                     //昔の北米輸出用のレンズはfeet表記なのでfeet表示あった方が良さげ
   feet = sens / 304.8 ;           //ミリからfeetへ単位変換  Extra feet display
   oled.clear();
-  oled.print(Cm , 1 );
+  oled.print(Cm);
   oled.println(" cm");
   oled.print(feet , 1 );
   oled.println(" feet");
