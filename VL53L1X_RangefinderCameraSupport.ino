@@ -134,9 +134,9 @@ void loop(){
  }}}
  
 void oled_Disp(){
-  float sens;
+  int sens;                       //floatにすると眩しい屋外で安定しない
   sens = (ReadSens_Avr() + flange);  //フランジバック修正 Laser sensor and film offset amount
-  float Cm;
+  int Cm;                         //floatにすると眩しい屋外で安定しない
   Cm = sens /10;
   float feet;                     //昔の北米輸出用のレンズはfeet表記なのでfeet表示あった方が良さげ
   feet = sens / 304.8 ;           //ミリからfeetへ単位変換  Extra feet display
